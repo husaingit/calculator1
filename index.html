@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calculator">
+
+            <div class="display">
+                <h2 id="result">0</h2>
+            </div>
+            <table>
+                <tr>
+
+                    <td><button id="clear" onclick="operator('C')">C</button></td>
+
+                    <td><button id="div" onclick="operator('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button id="7" onclick="operation('7')">7</button></td>
+                    <td><button id="8" onclick="operation('8')">8</button></td>
+                    <td><button id="9" onclick="operation('9')">9</button></td>
+                    <td><button id="mul" onclick="operator('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" onclick="operation('4')">4</button></td>
+                    <td><button id="5" onclick="operation('5')">5</button></td>
+                    <td><button id="6" onclick="operation('6')">6</button></td>
+                    <td><button id="sub" onclick="operator('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="1" onclick="operation('1')">1</button></td>
+                    <td><button id="2" onclick="operation('2')">2</button></td>
+                    <td><button id="3" onclick="operation('3')">3</button></td>
+                    <td><button id="add" onclick="operator('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="zero" onclick="operation('0')">0</button></td>
+                    <td><button id="decimal" onclick="operation('.')">.</button></td>
+                    <td colspan="2"><button id="equal" onclick="operator('=')" style="width: 150px;border-radius:20px">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
